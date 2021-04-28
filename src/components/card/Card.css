@@ -1,0 +1,50 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:480px) {
+    .card-container {
+        flex-direction: column;
+    }
+}
+
+.card {
+    margin: 10px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.green {
+    border-bottom: 10px solid #00ff00;
+}
+
+.blue {
+    border-bottom: 10px solid#0000ff;
+}
+
+.red {
+    border-bottom: 10px solid#dc143c;
+}
+
+.card h3 {
+    color: #808080;
+    font-size: 1.5rem;
+}
+
+.card h1 {
+    font-size: 2.5rem;
+}
+
+.card p {
+    font-size: 1.5rem;
+}
